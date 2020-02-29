@@ -2,107 +2,162 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>
-        Rules
-    </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>
+    Rules
+  </title>
 </head>
 
 <body>
-    <header>
-        <h1>
-            Nesting rules
-        </h1>
-        <h2>About the nesting rules</h2>
-        <p>Opening tag and closing tag is nesting 's rules
-            Why is it relevant to remember ?If you create a document and use an html &gt;</code>,you must follow these structur
-            because it help you to become a good at coding. accoding that definition you have to follow these rules:
-        </p>
-    </header>
-    <main>
-        <nav>
-            <ul>
-                <li>
-                    We should use a lowercase for the element name because a lowercase word is a term which describes a
-                    collection of HTML elements
-                </li>
-                <li>
-                    The element we need to put on element <code>&lt;head&gt;</code> are:
-                        TITLE (required)
-                        SCRIPT, STYLE
-                        CDATA
-                        ISINDEX, BASE, META, LINK (empty)
-                        OBJECT (see content model below)
-                </li>
-                <li>
-                    Define a doctype at the top
-                </li>
-                <li>
-                    You can't have end tag without a start tag.
-                </li>
-                <li>
-                    Every start tag needs to start with this symbol "<" and ending of ">" </li>
-                <li>
-                    Every end tag needs to start with this symbol "</" and ending ">" </li>
-                <li>
-                    We can't have <code>&lt;ol&gt;</code> as child of <code>&lt;lu&gt;</code> only valid tags to put inside an<code>&lt;ul&gt;</code>  is an <code>&lt;li&gt;</code>.
-                </li>
+
+  <header>
+    <h1>
+      Nesting rules
+    </h1>
+    <h2>About the nesting rules</h2>
+    <p>Opening tag and closing tag is nesting 's rules
+      Why is it relevant to remember ?If you create a document and use an html,you must follow these structur
+      because it help you to become a good at coding. accoding that definition you have to follow these rules:
+    </p>
+  </header>
+  <main>
+    <nav>
+      <ul>
+        <li>
+          We should use a lowercase for the element name because a lowercase word is a term which describes a
+          collection of HTML elements
+        </li>
+        <li>
+          The element we need to put on element <code>&lt;head&gt;</code> are:
+          TITLE (required)
+          SCRIPT, STYLE
+          CDATA
+          ISINDEX, BASE, META, LINK (empty)
+          OBJECT (see content model below)
+        </li>
+        <li>
+          Define a doctype at the top
+        </li>
+        <li>
+          You can't have end tag without a start tag.
+        </li>
+        <li>
+          Every start tag needs to start with this symbol <q>&lt;</q> and ending of "&gt;" </li>
+        <li>
+          Every end tag needs to start with this symbol <q>&lt;/</q> and ending <q>&gt;</q> </li>
+        <li>
+          We can't have <code>&lt;ol&gt;</code> as child of <code>&lt;lu&gt;</code> only valid tags to put inside
+          an<code>&lt;ul&gt;</code> is an <code>&lt;li&gt;</code>.
+        </li>
 
 
-                <li>
-                    we can't put body inside head because head tags don't belong inside of body tags.
-                </li>
-                <li>
-                    Element <code>&lt;li&gt;</code> not allowed as child of element body in this context.
-                </li>
-                <li>
-                    A document must not include more than one visible main element.
-                </li>
-                <li>
-                    The main element must not appear as a descendant of the <code>&lt;nav&gt;</code> element.
+        <li>
+          we can't put body inside head because head tags don't belong inside of body tags.
+        </li>
+        <li>
+          Element <code>&lt;li&gt;</code> not allowed as child of element body in this context.
+        </li>
+        <li>
+          A document must not include more than one visible main element.
+        </li>
+        <li>
+          The main element must not appear as a descendant of the <code>&lt;nav&gt;</code> element.
 
-                <li>
-                    We can
-                    have<code>&lt;a&gt;</code>,<code>&lt;abbr&gt;</code>,<code>&lt;address&gt;</code>,<code>&lt;area&gt;</code>
-                    if it is a descendant of a map element)
-                    </l>
-                <li>
-                    We can use this element <code>&lt;li&gt;</code> Contexts in which this element can be used:
-                    Inside <code>&lt;ol&gt;</code>,<code>&lt;ul&gt;</code>, <code>&lt;menu&gt;</code> elements.
+        <li>
+          We can
+          have<code>&lt;a&gt;</code>,<code>&lt;abbr&gt;</code>,<code>&lt;address&gt;</code>,<code>&lt;area&gt;</code>
+          if it is a descendant of a map element)
+          </li>
+        <li>
+          We can use this element <code>&lt;li&gt;</code> Contexts in which this element can be used:
+          Inside <code>&lt;ol&gt;</code>,<code>&lt;ul&gt;</code>, <code>&lt;menu&gt;</code> elements.
 
-                    </li>
-                    <li>
-                      Void elements(<code>&lt;area&gt;</code>, <code>&lt;base&gt;</code>, <code>&lt;br&gt;</code>, <code>&lt;col&gt;</code>, <code>&lt;command&gt;</code>, <code>&lt;embed&gt;</code>, <code>&lt;hr&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;keygen&gt;</code>, <code>&lt;link&gt;</code>, <code>&lt;meta&gt;</code>, <code>&lt;param&gt;</code>, <code>&lt;source&gt;</code>, <code>&lt;track&gt;</code>,<code>&lt wbr;&gt;</code>) only have a start tag; end tags must not be specified for void elements.
-                    </li>
-                    <li>
-                      A non-void element must have an end tag, unless the subsection for that element in the HTML elements section of this reference indicates that its end tag can be omitted
-                    </li>
-            </ul>
-        </nav>
-        <P>
-            <h1>
-                Do not do this
-            </h1>
+        </li>
+        <li>
+          Void elements(<code>&lt;area&gt;</code>, <code>&lt;base&gt;</code>, <code>&lt;br&gt;</code>,
+          <code>&lt;col&gt;</code>, <code>&lt;command&gt;</code>, <code>&lt;embed&gt;</code>, <code>&lt;hr&gt;</code>,
+          <code>&lt;img&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;keygen&gt;</code>, <code>&lt;link&gt;</code>,
+          <code>&lt;meta&gt;</code>, <code>&lt;param&gt;</code>, <code>&lt;source&gt;</code>,
+          <code>&lt;track&gt;</code>,<code>&lt;wbr;&gt;</code>) only have a start tag; end tags must not be specified
+          for void elements.
+        </li>
+        <li>
+          A non-void element must have an end tag, unless the subsection for that element in the HTML elements section
+          of this reference indicates that its end tag can be omitted
+        </li>
+      </ul>
+    </nav>
+
+      <h1>
+        Do not do this
+      </h1>
 
 
-            Don't do this example because element ul not allowed as child of element
-            ol in this context.
-            Contexts in which element ul may be used where flow content is expected.
-            Content model for element ol zero or more li and
-            script-supporting(Script-supporting elements are those that do not represent anything themselves ) elements.
-            <a href="example1.html">
-                Code example of nesting
-            </a>
-        </P>
-        <p>
-            <h1>Do this</h1>
-            Try to remember these rules .We should not put a more than one element in <code>&lt;ol&gt;</code>.We have to
-            use <code>&lt;li&gt;</code> as children with this element.
+      Don't do this example because element ul not allowed as child of element
+      ol in this context.
+      Contexts in which element ul may be used where flow content is expected.
+      Content model for element ol zero or more li and
+      script-supporting(Script-supporting elements are those that do not represent anything themselves ) elements.
+     <h3>
+        Code example of nesting
+      </h3>
+      &lt;!DOCTYPE html&gt;<br>
+      html lang="fruit"&gt;<br>
 
-            <a href="change-example.html">Code example of nesting</a>
-    </main>
+      &lt;head&gt;<br>
+      &lt;title&gt;Test&lt;/title&gt;<br>
+      &lt;/head&gt;<br>
+      <br>&lt;body&gt;<br>
+      &lt;main&gt;<br>
+      &lt;ol&gt;<br>
+      &lt;ul&gt;<br>
+      &lt;li&gt;
+      Apple
+      &lt;/li&gt;<br>
+      &lt;li&gt;
+      Bananas
+      &lt;/li&gt;<br>
+      &lt;/ul&gt;<br>
+      &lt;/ol&gt;<br>
+      &lt;/main&gt;<br>
+      &lt;/body&gt;<br>
 
+      &lt;/html&gt;
+
+
+
+      <h1>Do this instead</h1>
+      Try to remember these rules .We should not put a more than one element in <code>&lt;ol&gt;</code>.We have to
+      use <code>&lt;li&gt;</code> as children with this element.
+       <h3>
+         example of nesting
+        </h3>
+      &lt;!DOCTYPE html&gt;<br>
+      &lt;html lang="Fruit"&gt;<br>
+
+      &lt;head&gt;<br>
+      &lt;title&gt;<br>Example&lt;/title&gt;<br>
+      &lt;/head&gt;<br>
+
+      &lt;body&gt;<br>
+      &lt;main&gt;<br>
+
+      &lt;ol&gt;<br>
+      &lt;li&gt;apple
+      &lt;/li&gt;<br>
+      &lt;li&gt;
+      Banana
+      &lt;/li&gt;<br>
+      &lt;/ol&gt;<br>
+      &lt;/main&gt;<br>
+      &lt;/body&gt;<br>
+
+      &lt;/html&gt;<br>
+  </main>
+  <footer>
+    <a href="list-of-all-html-rules.html">List of all html rules</a>
+  </footer>
 
 
 </body>
